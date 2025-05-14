@@ -28,7 +28,14 @@ public class ClickOnLogin {
 //		jse.executeScript("window.scrollBy(0,100)"); // Relative Scrolling
 //		jse.executeScript("window.scrollTo(0,100)"); // Absolute Scrolling
 		
-		jse.executeScript("arguments[0].value='admin';", un);
+		String username = "admin";
+		
+		jse.executeScript("arguments[0].value=arguments[1];", un,username);
+		
+		
+		
+		
+		
 		jse.executeScript("arguments[0].click()", loginBtn);
 	}
 }
