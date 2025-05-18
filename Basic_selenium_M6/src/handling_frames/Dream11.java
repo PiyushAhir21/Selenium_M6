@@ -15,5 +15,7 @@ public class Dream11 {
 
 		WebElement reg = driver.findElement(By.id("regEmail"));
 		reg.sendKeys("9876543200");
+		
+		driver.quit();
 	}
 }
